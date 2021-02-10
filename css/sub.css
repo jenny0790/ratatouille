@@ -1,0 +1,106 @@
+/* sub.css */
+
+/* 배경 초기화 */
+body {
+    background : #333;
+}
+
+#video #main_header {
+    position : relative;
+    height: 100px;
+    width: 100%;
+    /* outline : 1px solid #fff; */
+}
+
+#video #main iframe {
+    width: 100%;
+    height: calc(100vh - 200px);
+    /* background : #fff; */
+    /* border : 1px solid #fff; */
+    display : block;
+}
+
+#main_footer {
+    position : absolute;
+    bottom : 0;
+    left : 0;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    background-color: #333;
+}
+
+#main_footer .sns {
+    margin-top : 20px;
+}
+
+#main_footer .sns li {
+    display: inline-block;
+    margin-left : 10px;
+    margin-right: 10px;
+}
+
+#main_footer p {
+    padding-bottom : 10px;
+}
+
+
+/* 갤러리 */
+#gallery #main_header {
+    position : relative;
+    width: 100%;
+    height: 100px;
+}
+
+#gallery #main figure {
+    max-width: 1000px;
+    /* outline : 2px solid white; */
+    margin : 0 auto;
+    overflow : hidden;
+    margin-bottom : 10px;
+}
+
+#gallery #main figure img {
+    width: 100%;
+}
+
+#gallery #main ul {
+    /* outline : 1px solid white; */
+    max-width: 1000px;
+    margin : 0 auto;
+}
+
+#gallery #main ul li {
+    width: calc(100% / 4 );
+    float: left;
+    overflow : hidden;
+    outline : 2px solid white;
+}
+
+#gallery #main ul li:hover {
+    border : 4px solid #fff;
+}
+
+#gallery #main ul li a img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* 갤러리 모바일 목록 구성 */
+@media screen and (max-width : 500px) {
+    .clear { clear : both;}
+    #gallery #main ul.thubm {
+        overflow : hidden;
+        width: 100%;
+        margin-left : 20px;
+    }
+
+    #gallery #main ul.thumb li {
+        width: calc((100%-40px) / 2 );
+        float : left;
+        outline : 2px solid #fff;
+        overflow : hidden;
+    }
+}

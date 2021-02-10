@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | 라따뚜이</title>
+
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="./animation_image/pavicon.png">
+
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/sub.css">
+
+    <!-- script -->
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/main.js"></script>
+
+</head>
+
+
+<body id="gallery">
+    <div class="container">
+        <header>
+            <button class='btn_toggle'>
+                <img src="./image/icon/menu.png" alt="toggle">
+            </button>
+        </header>
+
+        <nav id="gnb">
+            <ul>
+                <li><a href="./">Home</a></li>
+                <li><a href="./video.html">Video</a></li>
+                <li><a href="./index.html?synop=1">Synopsis</a></li>
+                <li class="active"><a href="./gallery.html">Gallery</a></li>
+            </ul>
+
+            <button class="btn_close">
+                <img src="./image/icon/cancel.png" alt="close">
+            </button>
+        </nav>
+
+        <!-- gallery 영역 -->
+        <section id="main">
+            <figure>
+                <img src="./image/gallery/movie_image(2).svg" alt="01">
+            </figure>
+            <ul class="thumb">
+                <li><a href="#"><img src="./image/gallery/movie_image(2).svg" alt="1"></a></li>
+                <li><a href="#"><img src="./image/gallery/movie_image(3).svg" alt="2"></a></li>
+                <li class="clear"><a href="#"><img src="./image/gallery/movie_image(4).svg" alt="3"></a></li>
+                <li><a href="#"><img src="./image/gallery/movie_image(5).svg" alt="4"></a></li>
+            </ul>
+        </section>
+        
+    </div> <!-- container 영역 끝-->
+
+    <!-- footer -->
+    <footer id="main_footer">
+        <ul class="sns">
+            <li><a href="#"><img src="./image/icon/instar.png" alt="instagram"></a></li>
+            <li><a href="#"><img src="./image/icon/facebook.png" alt="facebook"></a></li>
+            <li><a href="#"><img src="./image/icon/twitte.png" alt="twitter"></a></li>
+        </ul>
+        <p><small>&copy;Ratatouille(2007)  /  Brad Bird  /  ©Disney·PIXAR  /  General Audiences</small></p>
+    </footer>
+</body>
+
+</html>
